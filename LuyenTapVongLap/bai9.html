@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  function tinhGiaiThua(n){
+      let giaiThua =1;
+      for (let i = 1; i <=n ; i++) {
+          giaiThua = giaiThua*i;
+      }
+      return giaiThua;
+  }
+  let n = +prompt('Nhap so nguyen duong bat ki : ')
+  document.write(n+'! = '+tinhGiaiThua(n))
+</script>
+</body>
+</html>

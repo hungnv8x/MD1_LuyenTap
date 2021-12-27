@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function tinhBieuThuc(n) {
+        let sum = 0;
+        for (let i = 1; i <= n; i++) {
+            sum += 1 / Math.pow(i, 3)
+        }
+        sum = sum.toFixed(5)
+        return sum;
+    }
+    let n =+prompt('Nhap n : ')
+    document.write('Gia tri cua bieu thuc khi n = '+n+' la : '+tinhBieuThuc(n))
+</script>
+</body>
+</html>

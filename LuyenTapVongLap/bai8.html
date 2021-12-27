@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  let a=0;
+  let b=1;
+  let n = +prompt('Nhap so nguyen duong bat ki : ')
+  document.write(0+'<br>')
+  for (let i = 1; i<n;i++){
+      let tempt = a+b;
+      a =b;
+      b = tempt;
+      document.write(a +'<br>')
+  }
+</script>
+</body>
+</html>

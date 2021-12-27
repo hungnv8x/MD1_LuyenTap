@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function checkSoNguyenTo(n) {
+        for (let i = 2; i < n; i++) {
+            if (n % i == 0) {
+                return false;
+            }
+        }
+        return true;
+    }
+    let n = +prompt('Nhap vao mot so nguyen duong bat ki : ')
+    for (let i = 2; i <= n; i++) {
+        if (checkSoNguyenTo(i)) {
+            document.write(i + '<br>')
+        }
+    }
+</script>
+</body>
+</html>
