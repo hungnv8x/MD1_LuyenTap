@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  function tinhGiaiThua(n) {
+      let giaiThua = 1
+      if (n==0){
+          return giaiThua;
+      }else {
+          for (let i = 1; i <=n; i++) {
+              giaiThua = giaiThua*i;
+          }
+          return giaiThua;
+      }
+  }
+  document.write(tinhGiaiThua(5))
+</script>
+</body>
+</html>

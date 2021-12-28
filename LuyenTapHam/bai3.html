@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function timMaxThu2(arr) {
+        arr.sort(function (a, b) {
+            return a - b;
+        })
+        return arr[arr.length - 2];
+    }
+    document.write(timMaxThu2([2,3,4,2,8,5,9,3,15,14]))
+</script>
+</body>
+</html>

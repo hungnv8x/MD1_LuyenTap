@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function chuyenDoiSangNhiPhan(n) {
+        let nhiPhan=[];
+        while (n > 0) {
+            if (n % 2 == 0) {
+                nhiPhan.push(0);
+                n = n / 2
+            } else {
+                nhiPhan.push(1);
+                n = (n - 1) / 2
+            }
+        }
+        let str = nhiPhan.reverse().join('');
+        return str;
+    }
+    document.write(chuyenDoiSangNhiPhan(10))
+</script>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function checkSNT(a) {
+        for (let i = 2; i < a; i++) {
+            if (a % i == 0) {
+                return false;
+            }
+        }
+        return true;
+    }
+
+    function tichSNTTrongMang(arr) {
+        let tich = 1;
+        for (let i = 0; i < arr.length; i++) {
+            if (checkSNT(arr[i])) {
+                tich = tich * arr[i];
+            }
+        }
+        return tich;
+    }
+
+    document.write(tichSNTTrongMang([1, 2, 3, 4, 5, 6, 7, 8, 9, 10]))
+</script>
+</body>
+</html>

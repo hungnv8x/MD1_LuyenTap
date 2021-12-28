@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function checkYear(year) {
+        if (year % 4 == 0 && year % 100 != 0) {
+            return document.write('Nam ' + year + ' la nam nhuan');
+        } else if (year % 100 == 0 && year % 400 == 0) {
+            return document.write('Nam ' + year + ' la nam nhuan');
+        } else {
+            return document.write('Nam ' + year + ' khong phai la nam nhuan');
+        }
+    }
+    checkYear(2000)
+</script>
+</body>
+</html>
