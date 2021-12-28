@@ -6,18 +6,15 @@
 </head>
 <body>
 <script>
-  function tinhGiaiThua(n) {
-      let giaiThua = 1
-      if (n==0){
-          return giaiThua;
-      }else {
-          for (let i = 1; i <=n; i++) {
-              giaiThua = giaiThua*i;
-          }
-          return giaiThua;
-      }
-  }
-  document.write(tinhGiaiThua(5))
+    function tinhGiaiThua(n) {
+        let giaiThua = 1
+        for (let i = 1; i <= n; i++) {
+            giaiThua = giaiThua * i;
+        }
+        return giaiThua;
+    }
+
+    document.write(tinhGiaiThua(0))
 </script>
 </body>
 </html>

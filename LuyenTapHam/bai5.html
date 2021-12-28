@@ -22,10 +22,14 @@
                 tich = tich * arr[i];
             }
         }
-        return tich;
+        if (tich==1){
+            return 'Trong mang ko co so nguyen to'
+        }else {
+            return tich;
+        }
     }
 
-    document.write(tichSNTTrongMang([1, 2, 3, 4, 5, 6, 7, 8, 9, 10]))
+    document.write(tichSNTTrongMang([1, 4, 6, 8, 9, 10]))
 </script>
 </body>
 </html>
