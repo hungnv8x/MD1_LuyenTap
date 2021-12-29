@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function timPhanTuNganNhat(arr) {
+        let min = arr[0]
+        for (let i = 0; i < arr.length; i++) {
+            if (arr[0].length >= arr[i].length) {
+                min = arr[i];
+            }
+        }
+        return min;
+    }
+
+    document.write(timPhanTuNganNhat(['anh', 'Hung', 'Minh', '12345', '12']))
+</script>
+</body>
+</html>

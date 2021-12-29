@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function timMin(arr) {
+        let min = arr[0];
+        for (let i = 0; i < arr.length; i++) {
+            if (min > arr[i]) {
+                min = arr[i];
+            }
+        }
+        return min;
+    }
+
+    document.write(timMin([2, 1, 3, 0, 10, -4, 18]))
+</script>
+</body>
+</html>

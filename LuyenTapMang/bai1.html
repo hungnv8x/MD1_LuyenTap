@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function tinhTrungBinh(arr) {
+        let sum = 0;
+        for (let i = 0; i < arr.length; i++) {
+            sum += arr[i];
+        }
+        return sum / arr.length;
+    }
+
+    function timPhanTuLonHonTB(arr) {
+        let arr1 = [];
+        for (let i = 0; i < arr.length; i++) {
+            if (arr[i] > tinhTrungBinh(arr)) {
+                arr1.push(arr[i])
+            }
+        }
+        return arr1;
+    }
+
+    document.write(timPhanTuLonHonTB([1, 2, 3, 4, 5, 6, 7]))
+</script>
+</body>
+</html>

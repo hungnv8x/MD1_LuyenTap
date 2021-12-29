@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function tinhTongChan(arr) {
+        let sum = 0;
+        for (let i = 0; i < arr.length; i++) {
+            if (arr[i] % 2 == 0) {
+                sum += arr[i];
+            }
+        }
+        return sum;
+    }
+
+    document.write(tinhTongChan([1, 2, 3, 4, 5, 6]))
+</script>
+</body>
+</html>
